@@ -9,7 +9,7 @@ export const todoListFormSchema: Readonly<FormKitSchemaNode[]> = [
   {
     $el: 'h1',
     attrs: {
-      class: 'font-bold text-4xl mb-2',
+      class: 'font-bold text-red-300 text-4xl mb-2',
     },
     children: 'Add Todo List',
   },
@@ -17,7 +17,7 @@ export const todoListFormSchema: Readonly<FormKitSchemaNode[]> = [
     $formkit: 'text',
     name: 'title',
     label: 'Title',
-    validation: 'required',
+    validation: 'required|length:5,16',
   },
   {
     $formkit: 'text',

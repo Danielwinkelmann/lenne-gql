@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     prefix: 'Lenne',
   },
   'imports': {
-    dirs: ['./states'],
+    dirs: ['./states', './stores'],
   },
   'graphql-client': {
     clients: {

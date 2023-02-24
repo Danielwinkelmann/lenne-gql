@@ -4,9 +4,9 @@ import genesis from '@formkit/themes/tailwindcss/genesis'
 
 export default {
   icons: {
-    ...genesisIcons
+    ...genesisIcons,
   },
   config: {
-    classes: generateClasses(genesis)
-  }
+    classes: generateClasses(genesis),
+  },
 }
