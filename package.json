@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.2",
+    "eslint": "^8.34.0",
+    "nuxt": "^3.2.2"
+  },
+  "dependencies": {
+    "@formkit/icons": "^1.0.0-beta.15",
+    "@formkit/nuxt": "^1.0.0-beta.15",
+    "@formkit/themes": "^1.0.0-beta.15",
+    "@pinia/nuxt": "^0.4.7",
+    "nuxt-graphql-client": "^0.2.25",
+    "pinia": "^2.0.32",
+    "tailwind-variants": "^0.0.30"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

@@ -1,0 +1,59 @@
+mutation createTodoList($input: TodoListCreateInput!) {
+    createTodoList(input: $input) {
+        id
+        title
+        createdAt
+        tags
+    }
+}
+
+mutation updateTodoList($input: TodoListInput!, $id: String!) {
+    updateTodoList(input: $input, id: $id) {
+        id
+        title
+        createdAt
+        tags
+    }
+}
+
+mutation deleteTodoList($listId: String!) {
+    deleteTodoList(id: $listId) {
+        id
+        title
+        createdAt
+        tags
+    }
+}
+
+
+query findTodoLists {
+    findTodoLists {
+        id
+        title
+        description
+        createdAt
+        items {
+            id
+            title
+            createdAt
+            checked
+            tags
+        }
+    }
+}
+
+query findTodoListDetail($id: String!) {
+    getTodoList(id: $id) {
+       id
+        title
+        description
+        createdAt
+        items {
+            id
+            title
+            createdAt
+            checked
+            tags
+        }
+    }
+}

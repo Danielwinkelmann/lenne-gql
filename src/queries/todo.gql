@@ -1,0 +1,29 @@
+mutation addItemToTodoList($input: TodoItemCreateInput!, $listId: String!) {
+    addItemToTodoList(input: $input, listId: $listId) {
+        id
+        title
+        createdAt
+        checked
+        tags
+    }
+}
+
+mutation updateTodoItem($input: TodoItemInput!, $id: String!) {
+    updateTodoItem(input: $input, id: $id) {
+        id
+        title
+        createdAt
+        checked
+        tags
+    }
+}
+
+mutation removeItemFromTodoList($listId: String!, $id: String!) {
+    removeItemFromTodoList( itemId: $id, listId: $listId) {
+        id
+        title
+        createdAt
+        checked
+        tags
+    }
+}

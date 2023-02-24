@@ -1,0 +1,16 @@
+{
+  "name": "Untitled GraphQL Schema",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://api.todo.lenne.tech/graphql",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
+

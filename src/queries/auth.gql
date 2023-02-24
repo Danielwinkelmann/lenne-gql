@@ -1,0 +1,40 @@
+mutation signIn($input: AuthSignInInput!) {
+    signIn(input: $input) {
+        refreshToken
+        token
+    }
+}
+
+mutation signUp($input: AuthSignUpInput!) {
+    signUp(input: $input) {
+        refreshToken
+        token
+    }
+}
+
+mutation refreshToken {
+    refreshToken {
+        token
+        refreshToken
+    }
+}
+
+mutation createUser($input: UserCreateInput!) {
+    createUser(input: $input) {
+        id
+        firstName
+        lastName
+        labels
+        email
+    }
+}
+
+query getUser($id: String!) {
+    getUser(id: $id) {
+        id
+        firstName
+        lastName
+        labels
+        email
+    }
+}
