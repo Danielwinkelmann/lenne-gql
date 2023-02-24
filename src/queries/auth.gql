@@ -1,6 +1,5 @@
 mutation signIn($input: AuthSignInInput!) {
     signIn(input: $input) {
-        refreshToken
         token
     }
 }

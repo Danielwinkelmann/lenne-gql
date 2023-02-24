@@ -2,10 +2,12 @@
 export default defineNuxtConfig({
   'srcDir': './src',
   'modules': ['@nuxtjs/tailwindcss', '@formkit/nuxt', 'nuxt-graphql-client', '@pinia/nuxt', '../modules/lenne-module/module'],
-  // @ts-expect-error - TODO: get config from module
   'lenne-module': {
     secret: true,
     prefix: 'Lenne',
+  },
+  'imports': {
+    dirs: ['./states'],
   },
   'graphql-client': {
     clients: {

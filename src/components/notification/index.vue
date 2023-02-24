@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-  msg: string
+  message: string
   duration: number
 }>()
 const emit = defineEmits<{
@@ -47,7 +47,7 @@ onMounted(() => {
                   Successfully saved!
                 </p>
                 <p class="mt-1 text-sm text-gray-500">
-                  {{ props.msg }}
+                  {{ props.message }}
                 </p>
               </div>
               <div class="ml-4 flex flex-shrink-0">

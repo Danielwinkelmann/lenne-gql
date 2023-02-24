@@ -6,7 +6,7 @@ export default defineNuxtPlugin((_nuxtApp) => {
     const mountEl = document.createElement('div')
     document.body.appendChild(mountEl)
     const node = h(Notification, {
-      msg,
+      message: msg,
       duration,
       onClose: () => mountEl?.remove(),
     })

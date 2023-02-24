@@ -33,4 +33,3 @@ export default defineNuxtModule<ModuleOptions>({
     logger.info('Secret Option: ', moduleOptions.secret)
   },
 })
-
